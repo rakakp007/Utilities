@@ -7,12 +7,12 @@
 #the ancestral state (ancestral state inferred if different from the reference), 
 #the genotype of the two ancestral individual 
 
-setwd("D:/RAKAKPO/THESE_ROLAND/ANALYSE_2/POLARISATION_SNP")
+setwd("path")
 
-inputAnc="cichlid_data_Contig263.vcf"
+inputAnc="myfile.vcf"
 
 Anc  <- file(inputAnc, open = "r")
-outputFileAnc<- "Outgroup_Ancestral.txt"
+outputFileAnc<- "my.Outgroup_Ances_est.txt"
 
 i=1
 j=1
