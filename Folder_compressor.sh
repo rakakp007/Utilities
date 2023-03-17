@@ -7,10 +7,10 @@
 #SBATCH --mail-user=rakakpo@umn.edu 
 
 
-#   Requires the one arguments: the path to the folder to be compressed
+#   Requires one argument: the path to the folder to be compressed
 
 if [ "$1" == "-h" ]; then
-
+#   Helper
   echo " "
   echo "###############################"
   echo "#### The command line help ####"
@@ -37,6 +37,8 @@ if [ "$1" == "-h" ]; then
   exit 1
   
 fi
+
+# Script
 
 if [[ -z "$1" ]]; then 
   echo "Warning Argument is missing" 
