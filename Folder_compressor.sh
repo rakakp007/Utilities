@@ -1,13 +1,10 @@
 #!/bin/bash 
-#SBATCH --time=96:00:00
-#SBATCH --ntasks=8
-#SBATCH --mem=10g
-#SBATCH --tmp=10g
-#SBATCH --mail-type=ALL  
-#SBATCH --mail-user=rakakpo@umn.edu 
+#SBATCH --time=96:00:00 
+#SBATCH --ntasks=8 #SBATCH --mem=10g 
+#SBATCH --tmp=10g 
+#SBATCH --mail-type=ALL 
+#SBATCH --mail-user=rakakpo@umn.edu
 
-
-#   Requires one argument: the path to the folder to be compressed
 
 if [ "$1" == "-h" ]; then
 #   Helper
@@ -18,7 +15,12 @@ if [ "$1" == "-h" ]; then
   
   echo " "
   
-  echo "description: compress a whole folder"
+  echo "description"
+  Description:
+  echo "#   This SLURM batch script compresses an entire directory into a timestamped" 
+  echo "#   tar.gz archive. It requires one argument: the full path to the folder to be"
+  echo "#   compressed. The output archive is saved in the same location and named using"
+       " #   the pattern: <foldername>_<dd-mm-yy>.tar.gz"
   
   echo " "
   
@@ -28,7 +30,9 @@ if [ "$1" == "-h" ]; then
   
   echo "compressed folder name =   foldername_date"
   
-  echo " "
+  echo " Usage:"
+  echo "sbatch compress_folder.sh <path_to_folder>"
+  echo "sbatch compress_folder.sh -h "
   
   echo "#### rakakpo@umn.edu ####"
    
