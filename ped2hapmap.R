@@ -16,9 +16,9 @@ library(stringr)
 setwd("....................")
 
 # -------- INPUT FILES --------
-ped_file <- "geno_NTA_Aestru.ped"
-map_file <- "geno_NTA_Aestru.map"
-out_file <- "geno_NTA_Aestru.hmp"
+ped_file <- "myfile.ped"
+map_file <- "myfile.map"
+out_file <- "myfile.hmp"
 
 # -------- READ FILES --------
 map <- fread(map_file, header = FALSE)
@@ -88,5 +88,6 @@ hapmap <- cbind(hapmap, geno_hmp)
 
 # -------- WRITE FILE --------
 fwrite(hapmap, out_file, sep = "\t", quote = FALSE)
+
 
 
