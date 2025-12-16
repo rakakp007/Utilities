@@ -13,7 +13,7 @@ library(stringr)
 ############################################################
 
 
-setwd("N:/Stagiaires-CDD/Roland Akakpo/NEWTECHAQUA/GWAS/GAPIT/Aestru/Data")
+setwd("....................")
 
 # -------- INPUT FILES --------
 ped_file <- "geno_NTA_Aestru.ped"
@@ -88,4 +88,5 @@ hapmap <- cbind(hapmap, geno_hmp)
 
 # -------- WRITE FILE --------
 fwrite(hapmap, out_file, sep = "\t", quote = FALSE)
+
 
