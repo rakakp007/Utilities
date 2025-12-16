@@ -4,8 +4,8 @@
 #into a fasta file for mapping to get SNP acconding to a reference genome
 
 
-INPUT="/home1/datahome/rakakpo/Mapping_Ref/Axiom_Oyster02.Annotation.r1.CG.csv"
-OUTPUT="/home1/datahome/rakakpo/Mapping_Ref/Axiom_Oyster02.Annotation.fa"
+INPUT="myfile.csv"
+OUTPUT="Myfile.fa"
 
 rm -f "$OUTPUT"
 
@@ -23,3 +23,4 @@ do
 done
 
 echo "FASTA file created: $OUTPUT"
+
